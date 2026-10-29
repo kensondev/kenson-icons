@@ -1,0 +1,11 @@
+import * as React from "react";
+export type IconProps = React.SVGProps<SVGSVGElement> & { size?: number | string; strokeWidth?: number };
+export default function RocketIcon({ size = 24, strokeWidth = 2, ...props }: IconProps) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M12 15l-3-3c1.5-5 5-8.5 11-9-.5 6-4 9.5-9 11z"/>
+      <path d="M9 12H5l2.5-3.5H11M12 15v4l3.5-2.5V13"/>
+      <path d="M6 18c-1 1-1.5 3-1.5 3s2-.5 3-1.5"/>
+    </svg>
+  );
+}
